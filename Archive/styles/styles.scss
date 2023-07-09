@@ -1,0 +1,38 @@
+$row-grid: '.row-grid' !default;
+$card: '.card' !default;
+$col-grid: '.col-grid' !default;
+
+#{$row-grid} {
+  display: flex;
+  flex-flow: row wrap;
+
+  img {
+    height: 165px;
+    width: 100%;
+  }
+}
+
+#{$card} {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+#{$col-grid} {
+  display: flex;
+  flex-flow: column wrap;
+  height: 2300px;
+  align-content: center;
+
+  img {
+    width: 200px;
+    height: calc(100% - 35px);
+  }
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Secular One', sans-serif;
+}

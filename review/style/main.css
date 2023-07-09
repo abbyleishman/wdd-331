@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, .post-date, nav {
+  font-family: "Lora", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+header {
+  text-align: center;
+  margin-top: 1.2em;
+}
+
+nav {
+  text-transform: uppercase;
+}
+
+html {
+  height: 100%;
+  font-size: 1.2em;
+}
+
+header > h1 > a:link,
+header > h1 > a:visited,
+header > h1 > a:hover,
+header > h1 > a:active {
+  color: #333;
+}
+
+header li {
+  list-style: none;
+}
+
+body {
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+article {
+  display: grid;
+  padding: 1.2em;
+}
+
+img {
+  max-width: 10em;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column;
+  padding-left: 0;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  margin: 1.2em;
+}
+
+nav ul li {
+  padding: 0.6em;
+}
+
+a:link,
+a:visited {
+  color: #666;
+}
+
+a:hover {
+  color: #00ddff;
+}
+
+a:active {
+  color: #DEB887;
+}
+
+.post-date {
+  font-size: 1.2em;
+  text-align: right;
+  padding: 0.6em;
+}
+
+.post-content {
+  background-color: white;
+  border-top: 1px solid #d0d0d0;
+}
+
+@media screen and (min-width: 700px) {
+  nav ul {
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+  }
+  article {
+    grid-template-columns: 1fr 2fr;
+    padding: 0;
+  }
+  .post-content {
+    border-top: none;
+    border-left: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 1.2em;
+  }
+  .post-date {
+    padding-top: 1.2em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
